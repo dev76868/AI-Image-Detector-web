@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050915">
+  <meta name="description" content="Privacy Policy for the Real Or Fake AI Image Detector app.">
+  <title>Privacy Policy — Real Or Fake</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="index.html" aria-label="Real Or Fake home">
+        <img data-image="icon" alt="" width="44" height="44">
+        <span>Real Or Fake</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#privacy">Privacy</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms</a>
+      </nav>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main class="legal-main section-shell">
+    <a class="legal-back" href="index.html">← Back to home</a>
+
+    <header class="legal-hero">
+      <div class="eyebrow">LEGAL · PRIVACY</div>
+      <h1>Privacy Policy</h1>
+      <p>This policy explains how Real Or Fake processes information when you use the app to inspect an image for AI-generation or manipulation signals.</p>
+      <div class="legal-meta">Last Updated: October 28, 2026 · Version 1.1</div>
+    </header>
+
+    <div class="legal-layout">
+      <aside class="legal-toc" aria-label="Privacy Policy sections">
+        <strong>ON THIS PAGE</strong>
+        <a href="#controller">1. Data Controller & Contact</a>
+        <a href="#data">2. Information We Process</a>
+        <a href="#transfer">3. AI Processing & Transfer</a>
+        <a href="#retention">4. Data Retention</a>
+        <a href="#controls">5. User Controls</a>
+        <a href="#children">6. Children's Privacy</a>
+        <a href="#rights">7. Privacy Rights</a>
+      </aside>
+
+      <div class="legal-content">
+        <section class="legal-section" id="controller">
+          <h2>1. Data Controller and Contact</h2>
+          <p>Real Or Fake (“the App”) provides image-analysis tools for evaluating possible AI-generation and manipulation signals. For privacy questions or data-deletion requests, contact us at <a class="text-link" href="mailto:support@tracelens.app">support@tracelens.app</a>.</p>
+        </section>
+
+        <section class="legal-section legal-highlight" id="data">
+          <h2>2. Information We Process — Data Minimization</h2>
+          <p>The App uses Apple’s system photo picker. It does not scan your entire photo library. Only an image you explicitly select is processed.</p>
+          <ul>
+            <li>Pixels, file size, and format of the selected image.</li>
+            <li>Local file dimensions and available metadata used for on-device forensic inspection. Metadata intended for local inspection is not sent as a separate metadata payload for remote analysis.</li>
+            <li>An anonymous Supabase user identifier and authentication/session tokens used to secure analysis requests.</li>
+            <li>Analysis outputs such as AI-generation, deepfake or face-manipulation signals, generator indicators, request identifiers, and timestamps.</li>
+            <li>Optional scan history and thumbnails saved locally on your device according to your in-app settings.</li>
+          </ul>
+          <p>The App’s current privacy manifest declares no cross-app tracking and no tracking domains.</p>
+        </section>
+
+        <section class="legal-section" id="transfer">
+          <h2>3. Third-Party AI Processing and Data Transfer</h2>
+          <p>To perform remote analysis, the image you choose is transmitted over encrypted TLS/HTTPS to our Supabase Edge Function infrastructure and may then be processed by an external AI-analysis processor used to generate the requested result.</p>
+          <ul>
+            <li><strong>Consent:</strong> Image transfer for analysis is controlled through the App’s consent flow. You can withdraw that consent in Settings.</li>
+            <li><strong>No model training:</strong> Submitted images are not intended to be used to train, retrain, or improve AI models.</li>
+            <li><strong>Purpose limitation:</strong> Image data is used to provide the analysis you requested and to maintain the security and reliability of the service.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="retention">
+          <h2>4. Data Retention and Storage</h2>
+          <p><strong>Transient image processing.</strong> The App is designed so original submitted images are not maintained as a permanent server-side photo archive. Images are processed for the requested analysis and discarded after processing.</p>
+          <p><strong>On-device history.</strong> Depending on your settings, scan results and optional small thumbnails may be stored inside the App’s local sandbox. The App does not enable iCloud synchronization for this history by default.</p>
+          <p><strong>Authentication information.</strong> Anonymous session credentials are stored securely on the device so authenticated analysis requests can be made. These credentials can be removed through the in-app anonymous-account controls.</p>
+        </section>
+
+        <section class="legal-section" id="controls">
+          <h2>5. User Controls and Deletion</h2>
+          <p>The App provides controls intended to keep you in charge of locally stored information and future image transfers:</p>
+          <ul>
+            <li><strong>Withdraw analysis consent:</strong> stop future consent-based image transfers from Settings.</li>
+            <li><strong>Clear history:</strong> delete locally stored scan history and associated thumbnails.</li>
+            <li><strong>Thumbnail preference:</strong> control whether optional thumbnails are kept with scan history.</li>
+            <li><strong>Delete anonymous account:</strong> remove local anonymous-session credentials and request sign-out of the current Supabase session.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section" id="children">
+          <h2>6. Children’s Privacy</h2>
+          <p>The App is not directed to children under 13 and does not knowingly seek personal information from children under 13. Users must not submit unlawful material or images in violation of another person’s privacy, intellectual-property, or other legal rights.</p>
+        </section>
+
+        <section class="legal-section" id="rights">
+          <h2>7. Privacy Rights</h2>
+          <p>Depending on where you live, privacy laws such as the GDPR, CCPA/CPRA, or Türkiye’s KVKK may give you rights concerning access, deletion, correction, restriction, or information about the processing of personal data. To make a privacy request, email <a class="text-link" href="mailto:support@tracelens.app">support@tracelens.app</a>.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-inner">
+      <div class="footer-brand"><img data-image="icon" alt="" width="38" height="38"><div><strong>Real Or Fake</strong><span>AI Image Detector</span></div></div>
+      <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a><a href="mailto:support@tracelens.app">Support</a></div>
+      <p class="copyright">© <span id="year">2026</span> Real Or Fake. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="images.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
