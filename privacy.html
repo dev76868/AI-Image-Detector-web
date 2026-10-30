@@ -32,7 +32,7 @@
       <div class="eyebrow">LEGAL · PRIVACY</div>
       <h1>Privacy Policy</h1>
       <p>This policy explains how Real Or Fake processes information when you use the app to inspect an image for AI-generation or manipulation signals.</p>
-      <div class="legal-meta">Last Updated: October 28, 2026 · Version 1.1</div>
+      <div class="legal-meta">Last Updated: October 30, 2026 · Version 1.2</div>
     </header>
 
     <div class="legal-layout">
@@ -40,7 +40,7 @@
         <strong>ON THIS PAGE</strong>
         <a href="#controller">1. Data Controller & Contact</a>
         <a href="#data">2. Information We Process</a>
-        <a href="#transfer">3. AI Processing & Transfer</a>
+        <a href="#transfer">3. Supabase Processing & Transfer</a>
         <a href="#retention">4. Data Retention</a>
         <a href="#controls">5. User Controls</a>
         <a href="#children">6. Children's Privacy</a>
@@ -67,12 +67,13 @@
         </section>
 
         <section class="legal-section" id="transfer">
-          <h2>3. Third-Party AI Processing and Data Transfer</h2>
-          <p>To perform remote analysis, the image you choose is transmitted over encrypted TLS/HTTPS to our Supabase Edge Function infrastructure and may then be processed by an external AI-analysis processor used to generate the requested result.</p>
+          <h2>3. Supabase Processing and Data Transfer</h2>
+          <p>To perform remote analysis, the image you choose is transmitted over encrypted TLS/HTTPS directly to our Supabase backend and Supabase Edge Function infrastructure. The iOS app does not send the selected image directly to any separate third-party AI provider or external AI-processing service.</p>
           <ul>
             <li><strong>Consent:</strong> Image transfer for analysis is controlled through the App’s consent flow. You can withdraw that consent in Settings.</li>
-            <li><strong>No model training:</strong> Submitted images are not intended to be used to train, retrain, or improve AI models.</li>
-            <li><strong>Purpose limitation:</strong> Image data is used to provide the analysis you requested and to maintain the security and reliability of the service.</li>
+            <li><strong>Purpose limitation:</strong> The selected image is sent to Supabase only to perform the analysis you requested and to maintain the security and reliability of the service.</li>
+            <li><strong>No model training:</strong> Submitted images are not used to train, retrain, or improve AI models.</li>
+            <li><strong>Secure transport:</strong> Image transfers between the App and Supabase use encrypted TLS/HTTPS connections.</li>
           </ul>
         </section>
 
@@ -80,7 +81,7 @@
           <h2>4. Data Retention and Storage</h2>
           <p><strong>Transient image processing.</strong> The App is designed so original submitted images are not maintained as a permanent server-side photo archive. Images are processed for the requested analysis and discarded after processing.</p>
           <p><strong>On-device history.</strong> Depending on your settings, scan results and optional small thumbnails may be stored inside the App’s local sandbox. The App does not enable iCloud synchronization for this history by default.</p>
-          <p><strong>Authentication information.</strong> Anonymous session credentials are stored securely on the device so authenticated analysis requests can be made. These credentials can be removed through the in-app anonymous-account controls.</p>
+          <p><strong>Authentication information.</strong> Anonymous Supabase session credentials are stored securely on the device so authenticated analysis requests can be made. These credentials can be removed through the in-app anonymous-account controls.</p>
         </section>
 
         <section class="legal-section" id="controls">
